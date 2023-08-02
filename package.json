@@ -1,0 +1,43 @@
+{
+  "name": "fe-webview",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev:local": "MODE=local env-cmd -f environments/.env.local next",
+    "dev:development": "MODE=development env-cmd -f environments/.env.development next",
+    "dev:production": "MODE=production env-cmd -f environments/.env.production next",
+    "build:local": "MODE=local env-cmd -f environments/.env.local next build",
+    "build:development": "MODE=development env-cmd -f environments/.env.development next build",
+    "build:production": "MODE=production env-cmd -f environments/.env.production next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^4.32.0",
+    "axios": "^1.4.0",
+    "env-cmd": "^10.1.0",
+    "eslint": "^8.45.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "lodash": "^4.17.21",
+    "mem": "^9.0.2",
+    "next": "13.4.12",
+    "react": "18.2.0",
+    "react-cookie": "^4.1.1",
+    "react-dom": "18.2.0",
+    "styled-components": "^6.0.6",
+    "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@types/node": "20.4.5",
+    "@types/react": "18.2.18",
+    "@types/react-dom": "18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.2.0",
+    "@typescript-eslint/parser": "^6.2.0",
+    "@types/lodash": "^4.14.196"
+  }
+}
